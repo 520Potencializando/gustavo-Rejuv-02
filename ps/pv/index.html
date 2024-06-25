@@ -273,7 +273,7 @@ src="https://www.facebook.com/tr?id=803832734659359&ev=PageView&noscript=1"/>
 
         <!-- Botão -->
         <div id="cta1" class="esconder mt-4">
-          <a href="https://theneotonics.com/start/index.php?aff_id=196539&subid=[cmc_vid]" class="a-btn" style="text-decoration: none;">
+          <a href="https://theneotonics.com/start/index.php?aff_id=196539" class="a-btn" style="text-decoration: none;">
             <span class="span-btn">I WANT MY NEOTONIC!</span>
             <span class="span-btn2">(Attention: Limited Stock)</span>
           </a>
@@ -458,46 +458,7 @@ src="https://www.facebook.com/tr?id=803832734659359&ev=PageView&noscript=1"/>
             });
 
         </script>
-        <script>
-  function eventoEngajamento(event) {
-
-    console.log("Evento de Engajamento Inicializado...");
-    
-    event.preventDefault();
-    
-    var urlDestino = event.currentTarget.href;
-
-    console.log("Evento Disparado com Sucesso!");
-    
-    var script = document.createElement("script");
-
-    script.innerHTML = "window.clickmagick_cmc = { uid: '198923', hid: '93035509', cmc_project: 'Neo-FB-01', cmc_goal: 'e', vid_info: 'on', cmc_ref: 'ic-click', }";
-    
-    document.head.appendChild(script);
-    
-    var script = document.createElement('script');
-
-    script.src = "//cdn.clkmc.com/cmc.js";
-
-    document.head.appendChild(script);
-    
-    setTimeout(function() {
-      console.log("Processamento de Evento de IC Realizado com Sucesso! Redirecionando...");
-
-      window.location.href = urlDestino;
-    }, 3000);
-  }
-  
-  var searchString = "https://theneotonics.com/start/index.php?aff_id=196539&subid=[cmc_vid]";
-
-  var links = document.querySelectorAll('a');
-  
-  for (var i = 0; i < links.length; i++) {
-    if (links[i].href.includes(searchString)) {
-        links[i].addEventListener("click", eventoEngajamento);
-    }
-  }
-</script>
+        
 
         
 
